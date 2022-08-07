@@ -1,0 +1,108 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1.3rem;
+  font-family: 'Roboto', sans-serif;
+}
+
+
+.header {
+  display: flex;
+  justify-content: center;
+  min-height: 660px;
+  background-color: #F3EED9 ;
+} 
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+}
+
+.header .hero h4 {
+  text-transform: capitalize;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: .5rem;
+  font-weight: 300;
+}
+
+.header  h1 {
+  font-family: 'Playfair Display', serif;
+  color: #824936;
+  font-size: 3.7rem;
+  font-weight: 700;
+}
+
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 7rem ;
+  font-weight: 300;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 1128px;
+  color: #fff;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+.title {
+  width: 50%;
+  
+}
+
+.title h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.2rem;
+  margin-top: 0;
+  font-weight: 500;
+}
+
+
+.first-div {
+  background-color: #fff;
+  text-align: center;
+}
+
+.first-div p {
+  color: #222C2A;
+}
+
+.first-div .title {
+  color: #824936;
+}
+
+.first-div .article {
+  display: flex;
+  justify-content: space-around;
+}
+
+.first-section {
+  width: 100%;
+}
+
+.first-div .article p {
+  width: 50%; 
+  padding: 0 3rem;
+  text-align: left;
+}
+
+.second-div {
+  background-color: #222C2A;
+}
+
+.third-div {
+  background-color: #824936;
+}
+
+

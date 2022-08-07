@@ -1,0 +1,142 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f2ebe3;
+  line-height: 1.7;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 100px auto;
+  padding: 20px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-image {
+  width: 350px;
+  height: 500px;
+  
+}
+
+.product-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px 0 0 10px;
+}
+
+.product-preview {
+  width: 100%;
+  background-color: white;
+  border-radius: 0 10px 10px 0;
+  padding: 40px;
+  width: 350px;
+  height: 500px;
+  font-family: 'Fraunces';
+}
+
+.product-preview h3 {
+  letter-spacing: 0.4rem;
+  font-family: 'Montserrat';
+  margin-bottom: 10px;
+  color: #6c7289;
+}
+
+.product-preview h1 {
+  line-height: 2.2rem;
+  margin-bottom: 20px;
+  color: 	#1c232b;
+  font-family: 'Fraunces';
+  font-weight: 700;
+}
+
+.product-preview .description{
+  line-height: 1.5;
+  color: #6c7289;
+  width: 17rem;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.product-preview .price {
+  display: flex;
+  flex-direction: row;
+}
+
+.price p:nth-of-type(1) {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #3d8168;
+}
+
+.price p:nth-of-type(2) {
+  align-self: center;
+  text-decoration: line-through;
+  font-size: 0.8rem;
+  margin-left: 20px;
+  color: #6c7289;
+}
+
+.product-preview button {
+  background-color: #3d8168;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  font-family: 'Montserrat';
+  width: 100%;
+  padding: 15px;
+  margin-top: 30px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.product-preview button img {
+  width: 1.5rem;
+  margin-right: 15px;
+  margin-bottom: -5px;
+}
+
+button:hover {
+  background-color: #1a4031;
+}
+
+@media (max-width: 678px) {
+  .container {
+    margin: 50px auto;
+  }
+
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 5vh auto; 
+  }
+
+  .product-image img {
+    display: none;
+    
+  }
+
+  .product-image {
+    width: 100%;
+    background-image: url(/product-preview-card/images/image-product-mobile.jpg);
+    background-position: top;
+    background-size: cover;
+    border-radius: 15px 15px 0 0 ;
+  }
+  
+  .product-preview {
+    width: 100%;
+    border-radius: 0 0 15px 15px;
+  }
+
+}

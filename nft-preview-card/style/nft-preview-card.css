@@ -1,0 +1,146 @@
+* {
+  box-sizing: border-box;
+  margin: 0;  
+  padding: 0;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-family: 'Outfit';
+  color: #fff;
+  line-height: 1.7;
+}
+
+.flex-container {
+  max-width: 1440px;
+  width: 400px;
+  height: 700px;
+  background-color: hsl(216, 50%, 16%);
+  margin: 80px auto;
+  padding: 28px;
+  border-radius: 20px;
+}
+
+.images {
+  position: relative;
+}
+
+.main-img{
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+
+.images div {
+  position: absolute;
+  background-color: hsl(178, 100%, 50%, 60%);
+  top: 0;
+  width: 100%;
+  height: 98%;
+  opacity: 0;
+} 
+
+.images div:hover {
+  opacity: 1;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+.images div img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.component h3 {
+  margin: 18px 0 18px;
+  font-size: x-large;
+  font-weight: 600;
+}
+
+.component h3:hover {
+  color: aquamarine;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.description {
+  font-size: 18px;
+  opacity: 0.5;
+  margin-bottom: 18px;
+}
+
+.component .price {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+  width: 100%;
+  height: 5vh;
+  margin-bottom: 15px;
+}
+
+.price p:nth-of-type(1) {
+  display: flex;
+  align-items: center;
+  color: aquamarine;
+  font-weight: 400;
+}
+
+.price p img {
+  margin-right: 8px;
+}
+
+#clock {
+  width: 1.3rem;
+}
+
+.price p:nth-of-type(2) {
+  display: flex;
+  align-items: center;
+  opacity: 0.5;
+}
+
+hr {
+  opacity: 0.2;
+}
+
+footer .nft-creator {
+  display: flex;
+  align-items: center;
+  margin-top: 18px;
+}
+
+footer .nft-creator img {
+  width: 15%;
+  margin-right: 18px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+footer  {
+  font-size: large;
+  font-weight: 400;
+}
+
+footer span:nth-of-type(1) {
+  opacity: 0.7;
+}
+
+footer span:nth-of-type(2) {
+  color: white;
+  opacity: none;
+}
+
+footer span:nth-of-type(2):hover {
+  color: aquamarine;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+@media (max-width: 678px) {
+  .flex-container {
+    margin: 50px auto;
+  }
+}

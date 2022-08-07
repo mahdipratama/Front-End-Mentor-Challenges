@@ -1,0 +1,39 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+
+body {
+  margin: 0;
+  font-size: 1.3rem;
+}
+
+.example {
+  width: 90%;
+  margin: 5em auto;
+  padding: 10em 0;
+  background-color: steelblue;
+}
+
+
+/* 768px or bigger */
+@media (min-width: 500px) {
+  .example {
+    background-color: olivedrab;
+  }
+}
+
+
+@media (min-width: 700px) {
+  .example {
+    background-color: salmon;
+  }
+} 
+
+
+/* 500px or smaller */
+@media (max-width: 500px) {
+  .example {
+    background-color: orangered;
+  }
+}
